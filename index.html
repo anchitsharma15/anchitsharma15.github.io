@@ -283,30 +283,54 @@ footer {
 
 <section id="contact">
     <h2 class="section-title">Contact Us</h2>
-    
-    <div style="max-width:600px;margin:auto;text-align:center;">
+
+    <div style="max-width:700px;margin:auto;text-align:center;">
+
         <p style="margin-bottom:20px;">
-            Have questions or need assistance? We’re here to help.
-            Reach out to us directly via email or phone.
+            We’re here to help. Reach out to us anytime.
         </p>
 
-        <div style="margin-bottom:20px;">
+        <div style="margin-bottom:25px;font-size:1.1rem;">
             <p><strong>Email:</strong> info@arunodaycare.com</p>
-            <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+            <p><strong>Phone:</strong> 
+                <a href="tel:+91XXXXXXXXXX" style="color:var(--primary);text-decoration:none;">
+                    +91-XXXXXXXXXX
+                </a>
+            </p>
         </div>
 
-        <a href="mailto:info@arunodaycare.com?subject=Inquiry from ArunodayCare Website&body=Hello ArunodayCare Team,%0D%0A%0D%0AI would like to inquire about your services.%0D%0A%0D%0AThank you."
-           style="
-           display:inline-block;
-           padding:14px 30px;
-           background:var(--primary);
-           color:white;
-           text-decoration:none;
-           border-radius:30px;
-           font-weight:600;
-           transition:0.3s;">
-           Send Email
-        </a>
+        <!-- Action Buttons -->
+        <div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20ArunodayCare,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+               target="_blank"
+               style="padding:14px 25px;background:#25D366;color:white;
+               text-decoration:none;border-radius:30px;font-weight:600;">
+               📲 Chat on WhatsApp
+            </a>
+
+            <!-- Call Button -->
+            <a href="tel:+91XXXXXXXXXX"
+               style="padding:14px 25px;background:var(--primary);color:white;
+               text-decoration:none;border-radius:30px;font-weight:600;">
+               📞 Call Now
+            </a>
+
+        </div>
+
+        <!-- Google Map -->
+        <div style="margin-top:40px;">
+            <iframe 
+                src="https://www.google.com/maps?q=Dalhousie%20Himachal%20Pradesh&output=embed"
+                width="100%" 
+                height="300" 
+                style="border:0;border-radius:15px;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
     </div>
 </section>
 
@@ -337,6 +361,22 @@ window.onload = function() {
     animateValue("staff", 45, 2000);
 };
 </script>
-
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/91XXXXXXXXXX?text=Hello%20ArunodayCare,%20I%20am%20interested%20in%20your%20services."
+   target="_blank"
+   style="
+   position:fixed;
+   bottom:20px;
+   right:20px;
+   background:#25D366;
+   color:white;
+   padding:15px 18px;
+   border-radius:50px;
+   font-size:18px;
+   text-decoration:none;
+   box-shadow:0 5px 15px rgba(0,0,0,0.2);
+   z-index:1000;">
+   📲
+</a>
 </body>
 </html>
